@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .warp {
+        border: 1px solid red;
+        width: 200px;
+    }
+
+    .text {
+        background: green;
+    }
+
+    .f-l {
+        float: left;
+    }
+
+    /* 
+    IFC中具备float属性值的元素优先排列，在很多场景中用来在文章段落开头添加“tag”可以用到。
+    */
+</style>
+
+<body>
+    <div class="warp">
+        <span class="text">这是文本1</span>
+        <span class="text">这是文本2</span>
+        <span class="text f-l">这是文本3</span>
+        <span class="text">这是文本4</span>
+    </div>
+</body>
+
+</html>

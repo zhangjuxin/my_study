@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    /* position: relative; */
+    /* left: -300px; */
+    width: 300px;
+    float: left;
+    background: red;
+    margin-left: -100%;
+}
+
+.middle {
+    background: yellow;
+    width: 100%;
+    float: left;
+}
+
+.right {
+    /* position: relative; */
+    /* right: -200px; */
+    margin-left: -200px;
+    float: left;
+    width: 200px;
+    background: blue;
+}
+
+/* .container {
+    margin: 0 200px 0 300px;
+} */
+.inner {
+    margin-left: 300px;
+}
+
+.left,
+.right,
+.middle {
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+
+.container {
+    overflow: hidden;
+    min-width: 1000px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .par {
+            border: 5px solid #fcc;
+            /* 下面几种方式都会生成bfc */
+            overflow: hidden;
+            /* display: inline-block; */
+            /* position: absolute; */
+            /* float: left; */
+        }
+
+        .child {
+            border: 5px solid #f66;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        /* 
+        ***计算bfc高度的时候，浮动元素也参与计算***
+        上述代码因为浮动，会出现par高度塌陷的情况，
+        为了达到清除内部浮动，我们可以触发par生成bfc,那么par在计算高度的时候，par内部的浮动元素child也会参与计算
+        所以我们给
+        */
+    </style>
+</head>
+
+<body>
+    <div class="par">
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    p span {
+        margin: 100px;
+    }
+</style>
+
+<body>
+    <!-- 子元素只会计算横向样式空间，【padding、border、margin】，垂直方向样式空间不会被计算，【padding、border、margin】 -->
+    <p class="a1">
+        <span> English中文 </span>
+        <span> 中文English </span>
+    </p>
+</body>
+
+</html>

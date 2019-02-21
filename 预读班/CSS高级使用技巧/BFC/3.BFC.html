@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        color: #f55;
+        background: #fcc;
+        width: 200px;
+        line-height: 100px;
+        margin: 100px;
+    }
+</style>
+
+<body>
+    <div class="warp">
+        <p>haha</p>
+        <p>hehe</p>
+    </div>
+    <!-- 
+        两个p标签都有margin，但是实际上两个p之间只有100px，因为重叠的margin只取最大的,
+        box垂直方向的距离由margin决定，属于同一个bfc的两个相邻box的margin会发生重叠.
+     -->
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <!-- 下面的第二个p和第一个p不在一个bfc内，就不会发生margin的重叠了 -->
+    <style>
+        .warp {
+            overflow: hidden;
+        }
+    </style>
+    <p>haha</p>
+    <div class="warp">
+        <p>hehe</p>
+    </div>
+    <!-- 
+        根元素
+     -->
+</body>
+
+</html>

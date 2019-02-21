@@ -1,0 +1,38 @@
+# vscode使用指南
+
+### 配置中文
+
+```md
+1.下载语言包 插件 输入“Chinese” ，安装插件 “Chinese (Simplified) Language Pack for Visual Studio Code”
+
+2、 Ctrl +Shift +P快捷键 输入 “Configure  Language” 配置本地语言 
+将local的值，设置为中文简体“zh-cn”
+```
+
+#### 安装代码美化♣️插件
+
+```
+https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify
+插件配置：-->  .jsbeautifyrc文件
+https://github.com/HookyQR/VSCodeBeautify/blob/master/Settings.md
+
+editor.formatOnSave:true即可实现保存时自动格式化
+
+```
+
+### 标签高亮闭合标签
+
+```
+Highlight Matching Tag
+勾选：Highlight From Content
+```
+
+
+
+#### 配置在浏览器中打开
+
+```
+open in browser 插件
+安装完重启后右击html文件会出现打开默认浏览器和打开其他浏览器
+```
+
