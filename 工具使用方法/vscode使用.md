@@ -27,7 +27,15 @@ Highlight Matching Tag
 勾选：Highlight From Content
 ```
 
+### 添加头注释：koroFileHeader
 
+https://juejin.im/post/5bc45aa66fb9a05cdb10622d
+
+快捷键：
+
+ctrl+cmd+i
+
+ctrl+cmd+t
 
 #### 配置在浏览器中打开
 

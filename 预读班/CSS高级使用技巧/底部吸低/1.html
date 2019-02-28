@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+    　　这种方法就是利用flex布局对视窗高度进行分割。
+        footer的flex设为0，这样footer获得其固有的高度;
+        content的flex设为1，这样它会充满除去footer的其他部分。
+     */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        /* 设置项目的排列方向为上下方向 */
+        flex-direction: column;
+        /* 最小高度为充满屏幕 */
+        min-height: 100vh;
+    }
+
+    .content {
+        /* 充满剩余高度 */
+        flex: 1;
+    }
+
+    .footer {
+        flex: 0;
+        height: 100px;
+        background: red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <ul>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ul>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

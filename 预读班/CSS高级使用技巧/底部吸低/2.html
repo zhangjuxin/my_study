@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .clearfix {
+        display: inline-block;
+    }
+
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    html,
+    body,
+    .wrapper {
+        height: 100%;
+    }
+
+    body>.wrapper {
+        height: auto;
+        min-height: 100%;
+    }
+
+    .content {
+        padding-bottom: 150px;
+        /* 必须使用和footer相同的高度 */
+    }
+
+    .footer {
+        position: relative;
+        margin-top: -150px;
+        /* footer高度的负值 */
+        height: 150px;
+        clear: both;
+        background: red;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div class="wrapper clearfix">
+        <div class="content">
+            <ul>
+                <li>1DDDÎÎÎÎ</li>
+                <li>1DDDÎÎÎÎ</li>
+                <li>1DDDÎÎÎÎ</li>
+                <li>1DDDÎÎÎÎ</li>
+                <li>1DDDÎÎÎÎ</li>
+                <li>1DDDÎÎÎÎ</li>
+                <li>1DDDÎÎÎÎ</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

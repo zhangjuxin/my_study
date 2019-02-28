@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        现在给一个场景 ul > li > div > p，div占满li，p占满div，还是给ul绑定时间，
+        需要判断点击的是不是li（假设li里面的结构是不固定的），那么e.target就可能是p，
+        也有可能是div，这种情况你会怎么处理呢？
+     -->
+    <ul id="test">
+        <li>
+            <p> li <span>11111111111</span>
+            </p>
+        </li>
+        <li>
+            <div>
+            </div>
+        </li>
+        <li>
+            <span>3333333333</span>
+        </li>
+        <li>4444444</li>
+    </ul>
+    <script>
+        var oUl = document.getElementById('test');
+        oUl.addEventListener('click', function(ev) {
+            var target = ev.target;
+            while (target !== oUl) {
+                if (target.tagName.toLowerCase() == 'li') {
+                    console.log('li click~');
+                    break;
+                }
+                target = target.parentNode;
+                console.log(target);
+            }
+        })
+    </script>
+</body>
+
+</html>
