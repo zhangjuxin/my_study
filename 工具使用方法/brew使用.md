@@ -10,7 +10,7 @@ Homebrew是以最简单，最灵活的方式来安装苹果公司在MacOS中不�
 
 官方网站：[点击查看](https://brew.sh/index_zh-cn.html)
 
-Git仓库地址：[点击查看](https://github.com/Homebrew/brew/)
+仓库地址：[点击查看](https://github.com/Homebrew/brew/)
 
 2、Homebrew 安装：
 
