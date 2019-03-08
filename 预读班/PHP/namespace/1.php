@@ -9,5 +9,4 @@ class Apple{
         echo "1.php";
     }
 }
-
 ?>
