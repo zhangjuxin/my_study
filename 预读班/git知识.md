@@ -1,4 +1,12 @@
+向其他分支合并代码：在自己的分支上提交代码，然后Git pull进行更新代码，然后git checkout +分支名 进行切换分支，然后Git merge +自己的分支，把某一个分支的代码和当前的分支合并，git push  提交
+
+
+
+
+
 git branch -a
+
+git pull 本地与服务器端同步
 
 git checkout release   切换到release分支
 
@@ -11,6 +19,8 @@ git branch zhangjuxin   创建分支
 git branch -a
 
 git checkout zhangjuxin:切换分支
+
+git merge zhangjuxin  ：切换到要合并的分支后，执行命令，当前分支和zhangjuxin的分支合并，然后Git push  
 
 ```
 add 把变更录入到索引中
