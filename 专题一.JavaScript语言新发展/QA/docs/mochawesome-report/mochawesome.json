@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-03-25T07:23:59.144Z",
+    "end": "2019-03-25T07:23:59.179Z",
+    "duration": 35,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "1755b9ef-1cc2-4f8a-9a75-dc39e483a01a",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "c996eea5-6bc5-4568-9ed7-7315c7b19032",
+        "title": "node 的接口测试",
+        "fullFile": "/Users/apple/Desktop/yd/专题一.JavaScript语言新发展/QA/tests/service/router.spec.js",
+        "file": "/tests/service/router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test测试",
+            "fullTitle": "node 的接口测试 test测试",
+            "timedOut": false,
+            "duration": 25,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "request()\n    .get('/test')\n    .expect(200)\n    .expect(\"Content-Type\", /json/)\n    .end(function(err, res) {\n        if (err) {\n            done(err);\n        }\n        if (res.body.data == 'hello') {\n            done()\n        } else {\n            done(new Error('数据异常'));\n        }\n    })",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b52d1777-5284-4a64-924f-72ec500d3118",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "b52d1777-5284-4a64-924f-72ec500d3118"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 25,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

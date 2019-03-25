@@ -1,6 +1,6 @@
 function yideng() {
     console.log(1);
-}
+};
 (function(yideng) {
     yideng();
     yideng = function() {

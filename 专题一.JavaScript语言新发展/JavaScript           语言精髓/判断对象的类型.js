@@ -12,7 +12,7 @@ function type(obj) {
     if (obj == null) {
         return obj + "";
     }
-    //如果obj是引用类型，那么进行Object.prototype.toString.call，如果是普通类型，那么直接使用typeof
+    //如果obj是引用类型(typeof 检测是object、function)，那么进行Object.prototype.toString.call，如果是普通类型，那么直接使用typeof
     return typeof obj === "object" || typeof obj === "function" ? class2type[Object.prototype.toString.call(obj)] || "object" : typeof obj;
 }
 /* 
