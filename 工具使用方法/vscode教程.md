@@ -44,3 +44,32 @@ open in browser 插件
 安装完重启后右击html文件会出现打开默认浏览器和打开其他浏览器
 ```
 
+## 怎么定制自己的代码提示
+
+User/snippets是snippets存放位置，比如javascript的定义
+
+见
+
+```
+User/snippets/javascript.json
+```
+
+```
+ "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+```
+
+说明：
+
+- "Print to console" 是智能提示显示的
+- "prefix" 是用户输入的字母，比如本例中输入log自动提示
+- 当用户触发此snippet的时候，会按照"body"里代码生成
+- $1代表光标位置
+
+自己按照上面的方法定义自己的snippets，可以提高很多工作效率哦

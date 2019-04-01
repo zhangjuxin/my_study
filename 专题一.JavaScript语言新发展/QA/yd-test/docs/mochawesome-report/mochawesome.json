@@ -1,0 +1,81 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-03-22T13:59:45.598Z",
+    "end": "2019-03-22T13:59:45.689Z",
+    "duration": 91,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "66fc94ec-def5-45a4-9c09-104edf44cd9d",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "3027a2f4-3ed3-41ec-b966-a852f3d8484d",
+        "title": "Node接口测试",
+        "fullFile": "/Users/yuanzhijia/Desktop/yd-test/tests/service/router.spec.js",
+        "file": "/tests/service/router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test接口测试",
+            "fullTitle": "Node接口测试 test接口测试",
+            "timedOut": false,
+            "duration": 54,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "request()\n.get(\"/test\")\n.expect(200)\n.expect(\"Content-Type\",/json/)\n.end(function(err,res){\n    if(err){\n        done(err);\n    }\n    if(res.body.data == \"Hello 京程一灯\"){\n        done();\n    }else{\n        done(new Error(\"接口数据异常\"))\n    }\n})",
+            "err": {
+              "message": "Error: 接口数据异常",
+              "estack": "Error: 接口数据异常\n    at Test.<anonymous> (tests/service/router.spec.js:21:22)\n    at Test.assert (node_modules/_supertest@4.0.2@supertest/lib/test.js:181:6)\n    at localAssert (node_modules/_supertest@4.0.2@supertest/lib/test.js:131:12)\n    at /Users/yuanzhijia/Desktop/yd-test/node_modules/_supertest@4.0.2@supertest/lib/test.js:128:5\n    at Test.Request.callback (node_modules/_superagent@3.8.3@superagent/lib/node/index.js:716:12)\n    at parser (node_modules/_superagent@3.8.3@superagent/lib/node/index.js:916:18)\n    at IncomingMessage.res.on (node_modules/_superagent@3.8.3@superagent/lib/node/parsers/json.js:19:7)\n    at endReadableNT (_stream_readable.js:1064:12)"
+            },
+            "isRoot": false,
+            "uuid": "c637fc1b-7939-47b8-96b7-c14bceade1e9",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "c637fc1b-7939-47b8-96b7-c14bceade1e9"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 54,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}
