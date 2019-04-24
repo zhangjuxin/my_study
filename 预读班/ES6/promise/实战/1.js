@@ -49,7 +49,6 @@ async function get3() {
 async function get4(s) {
     const response = await fetch(`./${s.name}.json`);
     return response.json();
-
 }
 
 function pro() {

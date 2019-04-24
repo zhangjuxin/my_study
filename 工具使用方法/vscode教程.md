@@ -73,3 +73,5 @@ User/snippets/javascript.json
 - $1代表光标位置
 
 自己按照上面的方法定义自己的snippets，可以提高很多工作效率哦
+
+### 多彩的括号插件：**Bracket Pair Colorizer 2**

@@ -15,7 +15,7 @@ describe("node 的接口测试", function() {
                     done(err);
                 }
                 if (res.body.data == 'hello') {
-                    done()
+                    done();
                 } else {
                     done(new Error('数据异常'));
                 }

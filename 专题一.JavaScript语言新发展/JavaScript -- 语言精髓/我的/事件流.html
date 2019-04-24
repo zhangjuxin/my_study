@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 400px;
+            background: red;
+        }
+
+        .outcon {
+            width: 200px;
+            height: 200px;
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="box">
+            <div class="outcon"></div>
+        </div>
+    </div>
+    <script>
+        /* 
+    捕获机制中，事件从document一直向点击的元素传播，直到被点击元素。
+ 冒泡机制中，事件从被点击元素逐层向其父元素传播，直到根节点。
+ 简单的说，捕获机制由外向内传播，冒泡机制由内向外传播。
+
+ */
+        var btn = document.querySelector('.outcon');
+        var box = document.querySelector('.box');
+        btn.addEventListener('click', function() {
+            console.log(1);
+        })
+        box.addEventListener('click', function() {
+            console.log(2);
+        }, true)
+    </script>
+</body>
+
+</html>

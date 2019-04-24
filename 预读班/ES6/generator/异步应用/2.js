@@ -6,7 +6,6 @@ function* gen() {
     console.log(result, 'result');
     console.log(result.bio);
     //How people build software.
-
 }
 var g = gen();
 var result = g.next();

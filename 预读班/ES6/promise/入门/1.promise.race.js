@@ -13,7 +13,6 @@ Promise.myrace = function(entries) {
             var length = entries.length;
             for (var i = 0; i < length; i++) {
                 console.dir(Constructor, 'Constructor');
-
                 Constructor.resolve(entries[i]).then(resolve, reject);
             }
         });
